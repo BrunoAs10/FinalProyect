@@ -236,6 +236,17 @@ footer {
   border-style: groove;
 }
 
+.slide img{
+  height: 300px;
+  width: 500px;
+}
+
+.shadow{
+  background-image: url(../media/just-waves.png);
+}
+
+
+
 @media screen and (min-width: 320px) {
   .productos {
     display: grid;
