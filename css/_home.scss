@@ -1,3 +1,5 @@
+@import "variables";
+
 .home article{
     display: flex;
     flex-direction: column;
@@ -26,7 +28,7 @@
     font-size: 25px;
     border-style: dashed;
     border-radius: 15px;
-    background-color: rgb(33, 223, 160);
+    background-color: $colorparrafos;
     
 }
 
@@ -39,7 +41,7 @@
     font-size: 12px;
     border-style: dashed;
     border-radius: 20px;
-    background-color: rgb(33, 223, 160);
+    background-color: $colorparrafos;
     width: 300px;
    
     
@@ -58,7 +60,7 @@
     border-style: dashed;
     border-radius: 20px;
     width: 300px;
-    background-color: rgb(33, 223, 160);
+    background-color: $colorparrafos;
 
 }
 
