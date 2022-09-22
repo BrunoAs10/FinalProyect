@@ -84,6 +84,47 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+    }
+
+    .bar-btn{
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgb(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        li{
+            display: none;
+            line-height: 30px;
+            margin: 50px;
+            transition: all .5s;
+            a.active, a:hover{
+                color: rgb(86, 104, 5);
+                transition: .3s;
+
+            }
+        }
+
+        
+
+
+    }
+
+    #check {
+        display: none;
+        &:checked ~ .nav-menu{
+            height: 100vh;
+            li{
+                display: block;
+            }
+
+        }
     }
 
     
@@ -112,3 +153,18 @@ body{
 
  
 }
+
+.slide img{
+    height: 300px;
+    width: 500px;
+  }
+  
+.shadow{
+    background-image: url(../media/just-waves.png);
+  }
+
+*{
+    list-style: none;
+
+}
+  

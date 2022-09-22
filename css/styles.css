@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alfa+Slab+One&family=Lobster&family=Permanent+Marker&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-image: url(../media/halftone-yellow\ \(1\).png);
   padding: 20px;
@@ -35,8 +30,8 @@ header ul li a {
   border-width: 1px;
   color: black;
 }
-header ul:hover ul {
-  display: block;
+header ul li a:hover {
+  color: rgb(86, 104, 5);
 }
 
 #logo {
@@ -68,11 +63,6 @@ header ul:hover ul {
   margin-bottom: 10px;
 }
 
-body {
-  background-image: url(../media/old_map.png);
-  font-family: "Acme", sans-serif;
-}
-
 footer {
   background-image: url(../media/halftone-yellow\ \(1\).png);
   margin: auto;
@@ -102,76 +92,6 @@ footer {
   justify-content: center;
   padding-top: 10px;
   font-weight: bold;
-}
-
-.productos {
-  padding: 10px;
-  grid-area: productos;
-}
-.productos article {
-  border-style: groove;
-  border-radius: 15px;
-  border-width: 5px;
-  background-image: url(../media/just-waves.png);
-  padding: 10px;
-  text-align: center;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.contacto {
-  display: flex;
-  justify-content: center;
-}
-
-.ingresar {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-}
-
-.registro {
-  display: flex;
-  justify-content: center;
-}
-
-.fieldset {
-  background-color: bisque;
-}
-
-.ubicacion div {
-  display: inline-block;
-  margin: 10px;
-}
-
-.horarios li {
-  list-style-type: none;
-}
-
-.map {
-  border-style: groove;
-  border-color: black;
-  border-width: 1px;
-}
-
-.notifi {
-  margin: 10px;
-}
-
-.carrito {
-  margin: 10px;
-}
-
-.tabasco {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.valentina {
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .home article {
@@ -236,16 +156,74 @@ footer {
   border-style: groove;
 }
 
-.slide img{
-  height: 300px;
+.slide img {
+  height: 500px;
   width: 500px;
 }
 
-.shadow{
+.productos {
+  padding: 10px;
+  grid-area: productos;
+}
+.productos article {
+  border-style: groove;
+  border-radius: 15px;
+  border-width: 5px;
+  background-image: url(../media/just-waves.png);
+  padding: 10px;
+  text-align: center;
+}
+
+.tabasco {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.valentina {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.ubicacion div {
+  display: inline-block;
+  margin: 10px;
+}
+
+.horarios li {
+  list-style-type: none;
+}
+
+.map {
+  border-style: groove;
+  border-color: black;
+  border-width: 1px;
+}
+
+.shadow {
   background-image: url(../media/just-waves.png);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-image: url(../media/old_map.png);
+  font-family: "Acme", sans-serif;
+}
+
+.fieldset {
+  background-color: bisque;
+}
+
+.notifi {
+  margin: 10px;
+}
+
+.carrito {
+  margin: 10px;
+}
 
 @media screen and (min-width: 320px) {
   .productos {
@@ -278,6 +256,38 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .bar-btn {
+    cursor: pointer;
+  }
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px;
+    transition: all 0.5s;
+  }
+  .nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(86, 104, 5);
+    transition: 0.3s;
+  }
+  #check {
+    display: none;
+  }
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .productos {
@@ -294,4 +304,16 @@ footer {
   .navUl {
     display: none;
   }
+}
+.slide img {
+  height: 300px;
+  width: 500px;
+}
+
+.shadow {
+  background-image: url(../media/just-waves.png);
+}
+
+* {
+  list-style: none;
 }/*# sourceMappingURL=styles.css.map */
